@@ -1,0 +1,81 @@
+{{define "style"}}
+
+body {
+  background-color: black;
+  margin: 0; 
+}
+
+#backgroundconseil {
+  background-image: url("{{ ( resources.GetMatch "img/conseiletgestionbg.png").Permalink }}");
+  background-repeat: no-repeat;
+  background-size: cover;
+                     
+}
+#titleconseil, #titlegestion {
+  color: white;
+}
+
+.gestioncard {
+  display: flex;
+  justify-content: space-around;
+  margin-top:80px;
+}
+
+{{ end }}
+{{ define "main" }}
+<div class="px-4 py-5 text-center" id="backgroundconseil">
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4"><strong>{{ .Params.accroche}}</strong></p>
+    </div>
+</div>
+
+<div class="px-4 py-5 my-5 text-center" id="titleconseil">
+    <h1 class="display-5 fw-bold">{{ .Params.titleconseil }}</h1>
+    <p>{{ .Params.txt1Conseil }}</p>
+    <div class="gestioncard">
+      <div class="card" style="width: 18rem;">
+          <img src="{{ ( resources.GetMatch "img/conseil.png").Permalink }}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{ .Params.titleconseil }}</h5>
+            <p class="card-text">{{ .Params.phraseconseil }}</p>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="px-4 py-5 my-5 text-center" id="titlegestion">
+  <h1 class="display-5 fw-bold">{{ .Params.titlegestion }}</h1>
+  <p>{{ .Params.txt1Gestion }}</p>
+
+    <div class="gestioncard">
+        <div class="card" style="width: 18rem;">
+          <img src="{{ ( resources.GetMatch "img/GestionPatrimoine.jpg").Permalink }}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{ .Params.gestpatr }}</h5>
+            <p class="card-text">{{ .Params.phrasegestpatr }}</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="{{ ( resources.GetMatch "img/GestionEntreprise.png").Permalink }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ .Params.gestentr }}</h5>
+              <p class="card-text">{{ .Params.phrasegestentr }}</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="{{ ( resources.GetMatch "img/GestionFinanciere.png").Permalink }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ .Params.gestfin }}</h5>
+              <p class="card-text">{{ .Params.phrasegestfin }}</p>
+            </div>
+        </div>
+    </div>
+
+    <a href="{{ "contact" | relURL }}"><button type="button" class="btn btn-light">Contact</button></a>     
+</div>
+
+
+{{ end }}

@@ -1,0 +1,86 @@
+{{define "style"}}
+body {
+    background-color: black;
+    margin: 0; 
+}
+
+#backgroundconciergerie {
+    background-image: url("{{ ( resources.GetMatch "img/conciergerieBG1 (2).jpg").Permalink }}");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#h1gaintemps, #diffservices, #partenaires {
+   color:white;
+}
+
+
+
+.display-5 { 
+    margin-bottom: 50px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rounded {
+    display:flex;
+    justify-content: center;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin-top: 100px;
+}
+
+{{ end }}
+{{ define "main" }}
+<div class="px-4 py-5 text-center ggg" id="backgroundconciergerie">
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4"><strong>{{ .Params.accroche}}</strong></p>
+    </div>
+</div>
+
+<div class="px-4 py-5 my-5 text-center" id="h1gaintemps">
+    <h1 class="display-5 fw-bold">{{ .Params.h1gaintemps }}</h1>
+    <p>{{ .Params.txtavantage1 }}</p>
+    <p>{{ .Params.txtavantage2 }}</p>
+    <p>{{ .Params.txtavantage3 }}</p>
+</div>
+
+<div class="px-4 py-5 my-5 text-center" id="diffservices">
+    <h1 class="display-5 fw-bold">{{ .Params.diffservices }}</h1>
+    <div class="services">
+        {{ range .Params.services }}
+        <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{ .nom }}</h5>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+
+<div class="px-4 py-5 my-5 text-center" id="partenaires">
+    <h1 class="display-5 fw-bold">{{ .Params.partenaires }}</h1>
+    <div class="img">
+        <img src="{{ ( resources.GetMatch "img/logodataevo.jpg").Permalink }}" class="rounded mx-auto d-block" width="150" height="150" alt="">
+        <img src="{{ ( resources.GetMatch "img/logocleverone.jpeg").Permalink }}" class="rounded mx-auto d-block" width="150" height="150" alt="">
+        <img src="{{ ( resources.GetMatch "img/logofreshcut.png").Permalink }}" class="rounded mx-auto d-block" width="150" height="150" alt="">
+        <img src="{{ ( resources.GetMatch "img/logopsp.png").Permalink }}" class="rounded mx-auto d-block" width="150" height="150" alt="">
+        <img src="{{ ( resources.GetMatch "img/logochickendore.png").Permalink }}" class="rounded mx-auto d-block" width="150" height="150" alt="">    
+    </div>
+    
+    <a href="{{ "contact" | relURL }}"><button type="button" class="btn btn-light">Contact</button></a>
+</div>
+
+
+
+{{ end }}

@@ -1,0 +1,17 @@
+baseURL = 'https://ibra983.github.io/killbeokingston'
+title = 'Killbeo Kingston'
+[params]
+    description = "Site web de Killbeo Kingston"
+    favicon = "/img/logo.png"
+    logo = "/img/logo1.png"
+    
+[menu]
+[[menu.main]]
+    name = "A propos" 
+    url = "/apropos" 
+    weight = 2
+
+[[menu.main]]
+    name = "Contact" 
+    url = "/contact" 
+    weight = 3

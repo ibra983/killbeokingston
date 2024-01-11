@@ -1,0 +1,8 @@
+{{ $base := resources.Get "css/base.css" }}
+{{ $style := resources.Get "css/style.css" }} 
+{{ $bundle := slice $base $style | resources.Concat "css/bundle.css" }}
+{{ $css := $bundle | resources.Minify }}
+
+<style>
+
+</style>

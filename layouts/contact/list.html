@@ -1,0 +1,46 @@
+{{define "style"}}
+body {
+    background-color: black;
+    color : white;
+    margin: 0; 
+}
+
+.container {
+    margin-top: 50px;
+}
+{{ end }}
+{{ define "main"}}
+
+<div class="container">
+    <h2 class="mb-4">Prise de contact</h2>
+    <form>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom">
+            </div>
+            <div class="col-md-6">
+                <label for="prenom" class="form-label">Prénom</label>
+                <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Adresse Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Entrez votre adresse email">
+        </div>
+        <div class="mb-3">
+            <label for="numero" class="form-label">Numéro de téléphone</label>
+            <input type="tel" class="form-control" id="numero" placeholder="Entrez votre numéro de téléphone">
+        </div>
+        <div class="mb-3">
+            <label for="entreprise" class="form-label">Entreprise*</label>
+            <input type="text" class="form-control" id="entreprise" placeholder="Uniquement si vous êtes une entreprise">
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Entrez votre message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-light">Envoyer</button>
+    </form>
+</div>
+{{ end }}
