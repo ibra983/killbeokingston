@@ -3,13 +3,14 @@
     <head>    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
-    <title>Conciergerie</title>
-    <link rel="icon" href="https://ibra983.github.io/killbeokingston/img/logo.png" />
-    <meta name="description" content="Site web de Killbeo Kingston" />
+    <title>Conciergerie / Prestations de services</title>
+    <link rel="icon" href="https://ibra983.github.io/killbeokingston/img/logo1.png" />
+    <meta name="description" content="Site web de Killbeo Kingston, offrant des services de travaux et rénovation, conciergerie, et conseil en gestion d&#39;entreprise." />
 
     <meta name="generator" content="Hugo 0.121.1">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     
  
 
@@ -58,14 +59,43 @@ body {
     margin-top: 100px;
 }
 
+@media (max-width: 880px) {
+    .services {
+        flex-direction: column;  
+        align-items: center;  
+    }
+  
+    .card {
+        margin-bottom: 20px; 
+    }
+  }
 
+  @media (max-width: 700px) {
+    .img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img img {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+  
+
+
+
+        
     </style>
     </head>
     <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark ">
     <div class="container-fluid">
         <a class="navbar-brand" href="https://ibra983.github.io/killbeokingston">
-            <img class="d-inline-block align-top" width="30" height="30" src="https://ibra983.github.io/killbeokingston/img/logo.png">
+            <img class="d-inline-block align-top" width="150" height="100" src="https://ibra983.github.io/killbeokingston/img/logo1.png">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -73,35 +103,36 @@ body {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Services
                     </a>
                     <ul class="dropdown-menu">
                         
-                        <li><a class="dropdown-item" href="https://ibra983.github.io/killbeokingston/services/conciergerie/">Conciergerie</a></li>
+                        <li><a class="dropdown-item" href="https://ibra983.github.io/killbeokingston/services/travaux/">Travaux / Rénovation</a></li>
                         
-                        <li><a class="dropdown-item" href="https://ibra983.github.io/killbeokingston/services/conseil/">Conseil</a></li>
+                        <li><a class="dropdown-item" href="https://ibra983.github.io/killbeokingston/services/conciergerie/">Conciergerie / Prestations de services</a></li>
                         
-                        <li><a class="dropdown-item" href="https://ibra983.github.io/killbeokingston/services/travaux/">Travaux</a></li>
+                        <li><a class="dropdown-item" href="https://ibra983.github.io/killbeokingston/services/conseil/">Conseil / Gestion</a></li>
                         
                     </ul>
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/killbeokingston/apropos">A propos</a>
+                    <a class="nav-link active text-light" aria-current="page" href="/killbeokingston/apropos">A propos</a>
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/killbeokingston/contact">Contact</a>
+                    <a class="nav-link active text-light" aria-current="page" href="/killbeokingston/contact">Contact</a>
                 </li>
                 
             </ul>
         </div>
     </div>
 </nav>
+
 <div class="px-4 py-5 text-center ggg" id="backgroundconciergerie">
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4"><strong> Découvrez la tranquillité avec les services de conciergerie. Notre équipe dévouée est prête à répondre à tous vos besoins, offrant une gamme étendue de services de conciergerie personnalisés. Que ce soit pour la gestion de votre résidence, l&#39;organisation d&#39;événements spéciaux ou la coordination de coyages, nous sommes là pour simplifier votre vie quotidienne. Explorez une conciergerie qui va au_delà des attentes, mettant à votre disposition un service impeccable et une attention exceptionnelle aux détails. Contactez-nous pour découvrir comment notre équipe peut rendre chaque aspect de votre vie plus facile et plus agréable. </strong></p>
+      <p class="lead mb-4"><strong> Découvrez la tranquillité avec les services de conciergerie. Notre équipe dévouée est prête à répondre à tous vos besoins, offrant une gamme étendue de services de conciergerie personnalisés, incluant la gestion de votre résidence, l&#39;organisation d&#39;événements spéciaux, la coordination de voyages, ainsi qu&#39;un service de transport exclusif pour vous accompagner avec confort dans tous vos déplacements. Dans le respect de votre vie privée, nous assurons une discrétion totale à chaque étape. Explorez une conciergerie qui va au delà des attentes, mettant à votre disposition un service impeccable et une attention exceptionnelle aux détails, éliminant ainsi toute contrainte dans l&#39;expérience de nos services. Contactez-nous pour découvrir comment notre équipe peut rendre chaque aspect de votre vie plus facile et plus agréable. </strong></p>
     </div>
 </div>
 
@@ -109,86 +140,38 @@ body {
     <h1 class="display-5 fw-bold">Gagnez du temps, on s&#39;occupe de tout !</h1>
     <p>Gain de Temps et d&#39;Énergie : Libérez-vous des tâches fastidieuses et gagnez du temps précieux en déléguant les détails à notre service de conciergerie, vous permettant de vous concentrer sur l&#39;essentiel.</p>
     <p>Personnalisation et Service sur Mesure : Profitez d&#39;une expérience unique grâce à notre conciergerie, qui s&#39;adapte à vos besoins spécifiques, que ce soit pour des réservations, des achats ou des demandes particulières.</p>
-    <p>Réduction du Stress et de la Pression : Laissez-nous prendre en charge les aspects logistiques et organisationnels, réduisant ainsi votre stress et vous permettant de mener une vie plus équilibrée et sereine.</p>
+    <p>Réduction du Stress : Laissez-nous prendre en charge les aspects logistiques et organisationnels, réduisant ainsi votre stress et vous permettant de mener une vie plus équilibrée et sereine.</p>
 </div>
-
-<div class="px-4 py-5 my-5 text-center" id="diffservices">
-    <h1 class="display-5 fw-bold"> Les différentes préstations de services</h1>
-    <div class="services">
-        
-        <div class="card text-center" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Transport</h5>
-            </div>
-        </div>
-        
-        <div class="card text-center" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Coaching</h5>
-            </div>
-        </div>
-        
-        <div class="card text-center" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Gestion de l&#39;hébergement</h5>
-            </div>
-        </div>
-        
-    </div>
-</div>
-
-
-<div class="px-4 py-5 my-5 text-center" id="partenaires">
-    <h1 class="display-5 fw-bold">Nos partenaires</h1>
-    <div class="img">
-        <img src="https://ibra983.github.io/killbeokingston/img/logodataevo.jpg" class="rounded mx-auto d-block" width="150" height="150" alt="">
-        <img src="https://ibra983.github.io/killbeokingston/img/logocleverone.jpeg" class="rounded mx-auto d-block" width="150" height="150" alt="">
-        <img src="https://ibra983.github.io/killbeokingston/img/logofreshcut.png" class="rounded mx-auto d-block" width="150" height="150" alt="">
-        <img src="https://ibra983.github.io/killbeokingston/img/logopsp.png" class="rounded mx-auto d-block" width="150" height="150" alt="">
-        <img src="https://ibra983.github.io/killbeokingston/img/logochickendore.png" class="rounded mx-auto d-block" width="150" height="150" alt="">    
-    </div>
-    
-    <a href="#"><button type="button" href="#" class="btn btn-light">Contact</button></a>
-</div>
-
-
 
 
 <div class="container">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-        <div class="col mb-3">
-        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-        </a>
-        <p class="text-muted">&copy; 2024</p>
+    <footer class="row row-cols-1 row-cols-md-4 py-5 my-5 border-top center-text">
+        <div class="col mb-3 center-text">
+            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <p class="text-white">&copy; Killbeo Kingston 2024</p>
         </div>
     
-        <div class="col mb-3">
-    
+        <div class="col mb-3 center-text ">
+            <h5><a href="/killbeokingston/index.html" class="nav-link p-0 text-white">Nos différents services</a></h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="/killbeokingston/services/travaux" class="nav-link p-0 text-white">Travaux / Rénovation</a></li>
+                <li class="nav-item mb-2"><a href="/killbeokingston/services/conciergerie" class="nav-link p-0 text-white">Conciergerie / Prestations de services</a></li>
+                <li class="nav-item mb-2"><a href="/killbeokingston/services/conseil" class="nav-link p-0 text-white">Conseil et Gestion</a></li>
+            </ul>
         </div>
     
-        <div class="col mb-3">
-        <h5><a href="#" class="nav-link p-0 text-muted">Nos différents services</a></h5>
-        <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Travaux / Rénovation</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Conciergerie / Prestations de services</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Conseil et Gestion</a></li>
-        </ul>
+        <div class="col mb-3 center-text">
+            <h5><a href="/killbeokingston/contact" class="nav-link p-0 text-white">Contactez-nous</a></h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="https://www.google.com/maps/search/?api=1&query=66+Avenue+des+Champs-Élysées,+75008+Paris" class="nav-link p-0 text-white">66 Avenue des Champs-Élysées, 75008 Paris</a></li>
+                <li class="nav-item mb-2"><a href="tel:+33651375974" class="nav-link p-0 text-white">+33 6 51 37 59 74</a></li>
+                <li class="nav-item mb-2"><a href="mailto:contact@killbeokingston.com" class="nav-link p-0 text-white">contact@killbeokingston.com</a></li>
+            </ul>
         </div>
-    
-        <div class="col mb-3">
-        <h5><a href="#" class="nav-link p-0 text-muted">Contactez-nous</a></h5>
-        <ul class="nav flex-column">
-            <li class="nav-item mb-2">11, Avenue de la Baltique, Villebon-sur-Yvette</li>
-            <li class="nav-item mb-2">+33 6 51 37 59 74</li>
-            <li class="nav-item mb-2">contact@killbeokingston.fr</li>
-        </ul>
-        </div>
-        
     </footer>
-    </div>
-
-
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
  
  

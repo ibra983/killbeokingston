@@ -1,38 +1,32 @@
 {{define "style"}}
 
 {{ end }}
+
 <div class="container">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-        <div class="col mb-3">
-        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-        </a>
-        <p class="text-muted">&copy; 2024</p>
+    <footer class="row row-cols-1 row-cols-md-4 py-5 my-5 border-top center-text">
+        <div class="col mb-3 center-text">
+            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <p class="text-white">&copy; Killbeo Kingston 2024</p>
         </div>
     
-        <div class="col mb-3">
-    
+        <div class="col mb-3 center-text ">
+            <h5><a href="{{ "index.html" | relURL }}" class="nav-link p-0 text-white">Nos différents services</a></h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="{{ "services/travaux" | relURL }}" class="nav-link p-0 text-white">Travaux / Rénovation</a></li>
+                <li class="nav-item mb-2"><a href="{{ "services/conciergerie" | relURL }}" class="nav-link p-0 text-white">Conciergerie / Prestations de services</a></li>
+                <li class="nav-item mb-2"><a href="{{ "services/conseil" | relURL }}" class="nav-link p-0 text-white">Conseil et Gestion</a></li>
+            </ul>
         </div>
     
-        <div class="col mb-3">
-        <h5><a href="#" class="nav-link p-0 text-muted">Nos différents services</a></h5>
-        <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Travaux / Rénovation</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Conciergerie / Prestations de services</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Conseil et Gestion</a></li>
-        </ul>
+        <div class="col mb-3 center-text">
+            <h5><a href="{{ "contact" | relURL }}" class="nav-link p-0 text-white">Contactez-nous</a></h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="https://www.google.com/maps/search/?api=1&query=66+Avenue+des+Champs-Élysées,+75008+Paris" class="nav-link p-0 text-white">66 Avenue des Champs-Élysées, 75008 Paris</a></li>
+                <li class="nav-item mb-2"><a href="tel:+33651375974" class="nav-link p-0 text-white">+33 6 51 37 59 74</a></li>
+                <li class="nav-item mb-2"><a href="mailto:contact@killbeokingston.com" class="nav-link p-0 text-white">contact@killbeokingston.com</a></li>
+            </ul>
         </div>
-    
-        <div class="col mb-3">
-        <h5><a href="#" class="nav-link p-0 text-muted">Contactez-nous</a></h5>
-        <ul class="nav flex-column">
-            <li class="nav-item mb-2">11, Avenue de la Baltique, Villebon-sur-Yvette</li>
-            <li class="nav-item mb-2">+33 6 51 37 59 74</li>
-            <li class="nav-item mb-2">contact@killbeokingston.fr</li>
-        </ul>
-        </div>
-        
     </footer>
-    </div>
-
-
+</div>

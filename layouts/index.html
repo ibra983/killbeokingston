@@ -1,115 +1,127 @@
-{{ define "style" }}
-body {
-  background-color: black;
-  color: white;
-  margin: 0; 
-}
+  {{ define "style" }}
+  body {
+    background-color: black;
+    color: white;
+    margin: 0; 
+  }
 
-.bg-hero {
-  background-image: url("{{ ( resources.GetMatch "img/accueilbg.jpg").Permalink }}");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 500px;
-}
-.bg-hero p {
-  font-weight: 900;
-  margin-top: 70px;
-}
-.bg-hero h1 {
-  margin-top: 0px;
-}
-.card {
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  color: black; 
-  height: 300px; 
-  width: 300px;
-}
+  .bg-hero {
+    background-image: url("{{ ( resources.GetMatch "img/accueilbg.jpg").Permalink }}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+  .bg-hero p {
+    font-weight: 900;
+    margin-top: 70px;
+  }
+  .bg-hero h1 {
+    margin-top: 0px;
+  }
+  .card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: black; 
+    height: 300px; 
+    width: 300px;
+  }
 
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
-.overlay h5,
-.overlay .btn {
-  margin: 10px 0; 
-}
+  .overlay h5,
+  .overlay .btn {
+    margin: 10px 0; 
+  }
 
-.servicesAccueil {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 150px;
-}
+  .servicesAccueil {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+  }
 
-#card1 {
-  background-image: url("{{ ( resources.GetMatch "img/travauxbg.png").Permalink }}");
-}
+  #card1 {
+    background-image: url("{{ ( resources.GetMatch "img/travauxbg.png").Permalink }}");
+  }
 
-#card2 {
-  background-image: url("{{ ( resources.GetMatch "img/conciergeriebg.png").Permalink }}");
-}
+  #card2 {
+    background-image: url("{{ ( resources.GetMatch "img/conciergeriebg.png").Permalink }}");
+  }
 
-#card3 {
-  background-image: url("{{ ( resources.GetMatch "img/conseilbg.png").Permalink }}");
-}
-{{ end }}
+  #card3 {
+    background-image: url("{{ ( resources.GetMatch "img/conseilbg.png").Permalink }}");
+  }
 
+  @media (max-width: 880px) {
+    .servicesAccueil {
+        flex-direction: column; /* Les éléments flexibles seront empilés les uns sur les autres */
+        align-items: center; /* Centrer les éléments lorsqu'ils sont empilés */
+    }
 
-{{ define "main" }}
+    .card {
+        margin-bottom: 20px; 
+    }
+  }
 
-
-<div class="container-fluid bg-hero">
-    <div class="px-4 py-5 text-center">
-        <h1 class="display-5 fw-bold">{{ .Title }}</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">{{ .Params.accroche }}</p>
-        </div>
-    </div>
-</div>
-
-<div class="container col-xxl-8 px-4 py-5">
-  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-    <div class="col-10 col-sm-8 col-lg-6">
-      <img src="{{ ( resources.GetMatch "img/logokk.png").Permalink }}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-    </div>
-    <div class="col-lg-6">
-      <h1 class="display-55 fw-bold lh-1 mb-3">{{ .Params.phraserouge }}</h1>
-      <p class="lead">{{ .Params.phrasegauche }}</p>
-    </div>
-  </div>
-</div>
+  {{ end }}
 
 
-<h1 class="px-4 py-5 my-5 text-center">{{ .Params.txtdiffservices }}</h1>
+  {{ define "main" }}
 
 
-<div class="servicesAccueil">  
-  <div class="card" id="card1">
-    <div class="overlay">
-      <h5>Travaux / Rénovation</h5>
-      <a href="{{ "services/travaux" | relURL }}" class="btn btn-dark">Découvrir</a>
-    </div>
+  <div class="container-fluid bg-hero">
+      <div class="px-4 py-5 text-center">
+          <h1 class="display-5 fw-bold">{{ .Title }}</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">{{ .Params.accroche }}</p>
+          </div>
+      </div>
   </div>
 
-  <div class="card" id="card2">
-    <div class="overlay">
-      <h5>Conciergerie / Prestations de services</h5>
-      <a href="{{ "services/conciergerie" | relURL }}" class="btn btn-dark">Explorer</a>
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="{{ ( resources.GetMatch "img/logokk.png").Permalink }}" class="d-block mx-lg-auto img-fluid" alt="LogoKillbeoKingston" width="700" height="500" loading="lazy" style="border-radius: 20px;">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-55 fw-bold lh-1 mb-3">{{ .Params.phraserouge }}</h1>
+        <p class="lead">{{ .Params.phrasegauche }}</p>
+      </div>
     </div>
   </div>
 
-  <div class="card" id="card3">
-    <div class="overlay">
-      <h5>Conseil et Gestion</h5>
-      <a href="{{ "services/conseil" | relURL }}" class="btn btn-dark">En savoir plus</a>
+
+  <h1 class="px-4 py-5 my-5 text-center">{{ .Params.txtdiffservices }}</h1>
+
+
+  <div class="servicesAccueil">  
+    <div class="card" id="card1">
+      <div class="overlay">
+        <h5>Travaux / Rénovation</h5>
+        <a href="{{ "services/travaux" | relURL }}" class="btn btn-dark">Découvrir</a>
+      </div>
     </div>
-  </div>  
-</div>
+
+    <div class="card" id="card2">
+      <div class="overlay">
+        <h5>Conciergerie / Prestations de services</h5>
+        <a href="{{ "services/conciergerie" | relURL }}" class="btn btn-dark">Explorer</a>
+      </div>
+    </div>
+
+    <div class="card" id="card3">
+      <div class="overlay">
+        <h5>Conseil et Gestion</h5>
+        <a href="{{ "services/conseil" | relURL }}" class="btn btn-dark">En savoir plus</a>
+      </div>
+    </div>  
+  </div>
 
 
-{{end}}
+  {{end}}

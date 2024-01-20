@@ -28,13 +28,23 @@ body {
 
 }
 
+@media (max-width: 880px) {
+    .valeurs {
+        flex-direction: column; /* Les éléments flexibles seront empilés les uns sur les autres */
+        align-items: center; /* Centrer les éléments lorsqu'ils sont empilés */
+    }
+
+    .card {
+        margin-bottom: 20px; 
+    }
+}
+
 {{ end }}
 
 {{ define "main" }}
 
 <div class="px-4 py-5 my-5 text-center">
-    <h1 class="display-5 fw-bold">{{ .Params.titleQSN }}</h1>
-    <img class="d-block mx-auto mb-4" src="{{ ( resources.GetMatch "img/logo1.png").Permalink }}" alt="" width="250" height="150">
+    <img class="d-block mx-auto mb-4 img-fluid" src="{{ ( resources.GetMatch "img/logo1.png").Permalink }}" alt="LogoKillbeoKingston" width="550" height="350">
     <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">{{ .Params.descriptif1 }}</p>
     </div>
@@ -44,9 +54,9 @@ body {
 
 
 <h1 class="display-5 fw-bold" id="titlevaleurs" >{{ .Params.titlevaleurs }}</h1>
-<div class="valeurs">
+<div class="valeurs" >
     {{ range .Params.valeurs }}
-    <div class="card text-center" style="width: 18rem;">
+    <div class="card text-center" style="width: 18rem; overflow: hidden; border: 5px solid #8D0D05; border-radius: 15px;"   >
         <div class="card-body">
             <h5 class="card-title">{{ .nom }}</h5>
             <p class="card-text">{{ .phrase }}</p>

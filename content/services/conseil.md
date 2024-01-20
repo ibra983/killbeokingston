@@ -1,11 +1,11 @@
 ---
-title: "Conseil"
+title: "Conseil / Gestion"
 date: 2020-12-08T00:13:21+01:00
 draft: false
 weight: 3
 layout: conseil
 accroche: " Bienvenue dans le service de Conseil et Gestion, votre partenaire stratégique pour le conseil et la
-             gestion d'entreprise. Avec une approche axée sur l'excellence, nous offrons des services de conseil personnalisés pour réponredre aux besoins uniques de votre organisation. De la gestion financière à la planification stratégique, notre équipe expérimentée vous guide vers la réussite. Nous comprenons que chaque entreprise est unique, c'est pourquoi nous nous efforçons de fournir des solutions sur mesure qui stimulent la croissance et maximisent l'efficacité. Découvez comment notre expertise peut transformer vos défis en opportunités. Contactez-nous pour discuter de la manière dont nous pouvons optimiser votre entreprise. "
+             gestion d'entreprise. Avec une approche axée sur l'excellence, nous offrons des services de conseil personnalisés pour réponredre aux besoins uniques de votre organisation. De la gestion financière à la planification stratégique, notre équipe expérimentée vous guide vers la réussite. Nous comprenons que chaque entreprise est unique, c'est pourquoi nous nous efforçons de fournir des solutions sur mesure qui stimulent la croissance et maximisent l'efficacité. Découvrez comment notre expertise peut transformer vos défis en opportunités. Contactez-nous pour discuter de la manière dont nous pouvons optimiser votre entreprise. "
 
 titleconseil: "Conseil"
 txt1Conseil: "Nous sommes votre partenaire dédié pour des conseils stratégiques et éclairés. De la formulation de stratégies innovantes à la prise de décisions judicieuses, découvrez comment notre expertise en conseil peut être le catalyseur de votre réussite. Votre parcours vers l'excellence débute ici, avec des conseils avisés à chaque étape de votre chemin."

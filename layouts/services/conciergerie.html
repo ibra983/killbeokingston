@@ -39,6 +39,31 @@ body {
     margin-top: 100px;
 }
 
+@media (max-width: 880px) {
+    .services {
+        flex-direction: column; /* Les éléments flexibles seront empilés les uns sur les autres */
+        align-items: center; /* Centrer les éléments lorsqu'ils sont empilés */
+    }
+  
+    .card {
+        margin-bottom: 20px; 
+    }
+  }
+
+  @media (max-width: 700px) {
+    .img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img img {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+  
+
+
 {{ end }}
 {{ define "main" }}
 <div class="px-4 py-5 text-center ggg" id="backgroundconciergerie">
@@ -53,34 +78,4 @@ body {
     <p>{{ .Params.txtavantage2 }}</p>
     <p>{{ .Params.txtavantage3 }}</p>
 </div>
-
-<div class="px-4 py-5 my-5 text-center" id="diffservices">
-    <h1 class="display-5 fw-bold">{{ .Params.diffservices }}</h1>
-    <div class="services">
-        {{ range .Params.services }}
-        <div class="card text-center" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">{{ .nom }}</h5>
-            </div>
-        </div>
-        {{ end }}
-    </div>
-</div>
-
-
-<div class="px-4 py-5 my-5 text-center" id="partenaires">
-    <h1 class="display-5 fw-bold">{{ .Params.partenaires }}</h1>
-    <div class="img">
-        <img src="{{ ( resources.GetMatch "img/logodataevo.jpg").Permalink }}" class="rounded mx-auto d-block" width="150" height="150" alt="">
-        <img src="{{ ( resources.GetMatch "img/logocleverone.jpeg").Permalink }}" class="rounded mx-auto d-block" width="150" height="150" alt="">
-        <img src="{{ ( resources.GetMatch "img/logofreshcut.png").Permalink }}" class="rounded mx-auto d-block" width="150" height="150" alt="">
-        <img src="{{ ( resources.GetMatch "img/logopsp.png").Permalink }}" class="rounded mx-auto d-block" width="150" height="150" alt="">
-        <img src="{{ ( resources.GetMatch "img/logochickendore.png").Permalink }}" class="rounded mx-auto d-block" width="150" height="150" alt="">    
-    </div>
-    
-    <a href="{{ "contact" | relURL }}"><button type="button" class="btn btn-light">Contact</button></a>
-</div>
-
-
-
 {{ end }}

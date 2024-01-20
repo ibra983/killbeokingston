@@ -3,13 +3,14 @@
     <head>    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
-    <title>Conseil</title>
-    <link rel="icon" href="https://ibra983.github.io/killbeokingston/img/logo.png" />
-    <meta name="description" content="Site web de Killbeo Kingston" />
+    <title>Conseil / Gestion</title>
+    <link rel="icon" href="https://ibra983.github.io/killbeokingston/img/logo1.png" />
+    <meta name="description" content="Site web de Killbeo Kingston, offrant des services de travaux et rénovation, conciergerie, et conseil en gestion d&#39;entreprise." />
 
     <meta name="generator" content="Hugo 0.121.1">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     
  
 
@@ -34,20 +35,68 @@ body {
   color: white;
 }
 
+#txtGestion p {
+  margin: 0 auto;
+  width: 30%;
+}
+
+.phraseIntro {
+  font-size: 20px
+}
+
 .gestioncard {
   display: flex;
   justify-content: space-around;
   margin-top:80px;
+  margin-bottom: 50px;
+}
+
+h5 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+p {
+  margin: 30px 30px 30px 30px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 18rem;
+}
+
+@media (max-width: 950px) {
+  .gestioncard {
+      flex-direction: column;  
+      align-items: center;  
+  }
+
+  #txtGestion p {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .phraseIntro {
+    font-size: 15px
+  }
+
+  .card {
+      margin-bottom: 20px; 
+  }
 }
 
 
+        
     </style>
     </head>
     <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark ">
     <div class="container-fluid">
         <a class="navbar-brand" href="https://ibra983.github.io/killbeokingston">
-            <img class="d-inline-block align-top" width="30" height="30" src="https://ibra983.github.io/killbeokingston/img/logo.png">
+            <img class="d-inline-block align-top" width="150" height="100" src="https://ibra983.github.io/killbeokingston/img/logo1.png">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -55,48 +104,51 @@ body {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Services
                     </a>
                     <ul class="dropdown-menu">
                         
-                        <li><a class="dropdown-item" href="https://ibra983.github.io/killbeokingston/services/conciergerie/">Conciergerie</a></li>
+                        <li><a class="dropdown-item" href="https://ibra983.github.io/killbeokingston/services/travaux/">Travaux / Rénovation</a></li>
                         
-                        <li><a class="dropdown-item" href="https://ibra983.github.io/killbeokingston/services/conseil/">Conseil</a></li>
+                        <li><a class="dropdown-item" href="https://ibra983.github.io/killbeokingston/services/conciergerie/">Conciergerie / Prestations de services</a></li>
                         
-                        <li><a class="dropdown-item" href="https://ibra983.github.io/killbeokingston/services/travaux/">Travaux</a></li>
+                        <li><a class="dropdown-item" href="https://ibra983.github.io/killbeokingston/services/conseil/">Conseil / Gestion</a></li>
                         
                     </ul>
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/killbeokingston/apropos">A propos</a>
+                    <a class="nav-link active text-light" aria-current="page" href="/killbeokingston/apropos">A propos</a>
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/killbeokingston/contact">Contact</a>
+                    <a class="nav-link active text-light" aria-current="page" href="/killbeokingston/contact">Contact</a>
                 </li>
                 
             </ul>
         </div>
     </div>
 </nav>
+
 <div class="px-4 py-5 text-center" id="backgroundconseil">
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4"><strong> Bienvenue dans le service de Conseil et Gestion, votre partenaire stratégique pour le conseil et la gestion d&#39;entreprise. Avec une approche axée sur l&#39;excellence, nous offrons des services de conseil personnalisés pour réponredre aux besoins uniques de votre organisation. De la gestion financière à la planification stratégique, notre équipe expérimentée vous guide vers la réussite. Nous comprenons que chaque entreprise est unique, c&#39;est pourquoi nous nous efforçons de fournir des solutions sur mesure qui stimulent la croissance et maximisent l&#39;efficacité. Découvez comment notre expertise peut transformer vos défis en opportunités. Contactez-nous pour discuter de la manière dont nous pouvons optimiser votre entreprise. </strong></p>
+      <p class="lead mb-4"><strong> Bienvenue dans le service de Conseil et Gestion, votre partenaire stratégique pour le conseil et la gestion d&#39;entreprise. Avec une approche axée sur l&#39;excellence, nous offrons des services de conseil personnalisés pour réponredre aux besoins uniques de votre organisation. De la gestion financière à la planification stratégique, notre équipe expérimentée vous guide vers la réussite. Nous comprenons que chaque entreprise est unique, c&#39;est pourquoi nous nous efforçons de fournir des solutions sur mesure qui stimulent la croissance et maximisent l&#39;efficacité. Découvrez comment notre expertise peut transformer vos défis en opportunités. Contactez-nous pour discuter de la manière dont nous pouvons optimiser votre entreprise. </strong></p>
     </div>
 </div>
 
-<div class="px-4 py-5 my-5 text-center" id="titleconseil">
+<div class="px-4 py-5 my-5 text-center" id="titleconseil" >
     <h1 class="display-5 fw-bold">Conseil</h1>
-    <p>Nous sommes votre partenaire dédié pour des conseils stratégiques et éclairés. De la formulation de stratégies innovantes à la prise de décisions judicieuses, découvrez comment notre expertise en conseil peut être le catalyseur de votre réussite. Votre parcours vers l&#39;excellence débute ici, avec des conseils avisés à chaque étape de votre chemin.</p>
-    <div class="gestioncard">
-      <div class="card" style="width: 18rem;">
-          <img src="https://ibra983.github.io/killbeokingston/img/Conseil.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Conseil</h5>
-            <p class="card-text"> Plongez dans notre expertise en conseil aux entreprises, où nous guidons nos partenaires vers des décisions éclairées et stratégiques. Notre objectif : stimuler leur croissance et assurer un succès pérenne à long terme.</p>
-          </div>
+    <p class="phraseIntro">Nous sommes votre partenaire dédié pour des conseils stratégiques et éclairés. De la formulation de stratégies innovantes à la prise de décisions judicieuses, découvrez comment notre expertise en conseil peut être le catalyseur de votre réussite. Votre parcours vers l&#39;excellence débute ici, avec des conseils avisés à chaque étape de votre chemin.</p>
+    <div class="gestioncard" >
+          <div class="gestion-item" >
+            <img src="https://ibra983.github.io/killbeokingston/img/Conseil.png"  style="width: 18rem; overflow: hidden; border: 5px solid #8D0D05; border-radius: 15px;" class="imgOpaque" width="150" height="250" alt="ImgConseil">
+            <div class="text-white" id="txtGestion">
+                <h5>Conseil</h5>
+                <p>Nous sommes votre partenaire dédié pour des conseils stratégiques et éclairés. De la formulation de stratégies innovantes à la prise de décisions judicieuses, découvrez comment notre expertise en conseil peut être le catalyseur de votre réussite. Votre parcours vers l&#39;excellence débute ici, avec des conseils avisés à chaque étape de votre chemin.</p>
+            </div>
+        </div>
+
       </div>
     </div>
 </div>
@@ -104,74 +156,69 @@ body {
 
 <div class="px-4 py-5 my-5 text-center" id="titlegestion">
   <h1 class="display-5 fw-bold">Gestion</h1>
-  <p>Nous sommes votre partenaire dédié à l&#39;optimisation opérationnelle, de la gestion financière à la coordination efficace des ressources. Découvrez comment notre expertise en gestion peut transformer vos défis en opportunités de croissance durable. Votre succès commence ici, avec une gestion experte à vos côtés.</p>
+  <p class="phraseIntro">Nous sommes votre partenaire dédié à l&#39;optimisation opérationnelle, de la gestion financière à la coordination efficace des ressources. Découvrez comment notre expertise en gestion peut transformer vos défis en opportunités de croissance durable. Votre succès commence ici, avec une gestion experte à vos côtés.</p>
 
-    <div class="gestioncard">
-        <div class="card" style="width: 18rem;">
-          <img src="https://ibra983.github.io/killbeokingston/img/GestionPatrimoine.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Gestion patrimoine</h5>
-            <p class="card-text"> Découvrez notre approche méticuleuse de la gestion de patrimoine, où nous assurons une protection et une croissance optimales des actifs. Une attention particulière est accordée à comprendre les objectifs financiers uniques de nos clients. </p>
-          </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="https://ibra983.github.io/killbeokingston/img/GestionEntreprise.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Gestion entreprise</h5>
-              <p class="card-text"> Notre expertise en gestion d&#39;entreprise transcende les normes, offrant des solutions sur mesure pour optimiser l&#39;efficacité opérationnelle, stimuler l&#39;innovation et assurer la pérennité des entreprises que nous accompagnons. </p>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="https://ibra983.github.io/killbeokingston/img/GestionFinanciere.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Gestion financière</h5>
-              <p class="card-text"> Explorez notre approche rigoureuse de la gestion financière, où nous optimisons les ressources, maximisons les rendements et minimisons les risques. C&#39;est ainsi que nous construisons une santé financière robuste pour nos partenaires. </p>
-            </div>
+  <div class="gestioncard">
+    <div class="gestion-item" >
+        <img src="https://ibra983.github.io/killbeokingston/img/GestionPatrimoine.jpg"  style="width: 18rem; overflow: hidden; border: 5px solid #8D0D05; border-radius: 15px;" class="imgOpaque" width="150" height="250" alt="ImgGestionPatrimoine">
+        <div class="text-white">
+            <h5>Gestion patrimoine</h5>
+            <p> Découvrez notre approche méticuleuse de la gestion de patrimoine, où nous assurons une protection et une croissance optimales des actifs. Une attention particulière est accordée à comprendre les objectifs financiers uniques de nos clients. </p>
         </div>
     </div>
 
-    <a href="#"><button type="button" href="#" class="btn btn-light">Contact</button></a>     
+    <div class="gestion-item">
+        <img src="https://ibra983.github.io/killbeokingston/img/GestionEntreprise.png"  style="width: 18rem; overflow: hidden; border: 5px solid #8D0D05; border-radius: 15px;" class="imgOpaque" width="150" height="250" alt="ImgGestionEntreprise">
+        <div class="text-white">
+            <h5>Gestion entreprise</h5>
+            <p> Notre expertise en gestion d&#39;entreprise transcende les normes, offrant des solutions sur mesure pour optimiser l&#39;efficacité opérationnelle, stimuler l&#39;innovation et assurer la pérennité des entreprises que nous accompagnons. </p>
+        </div>
+    </div>
+
+    <div class="gestion-item">
+        <img src="https://ibra983.github.io/killbeokingston/img/GestionFinanciere.png"  style="width: 18rem; overflow: hidden; border: 5px solid #8D0D05; border-radius: 15px;" class="imgOpaque" width="150" height="250" alt="ImgGestionFinanciere">
+        <div class="text-white">
+            <h5>Gestion financière</h5>
+            <p> Explorez notre approche rigoureuse de la gestion financière, où nous optimisons les ressources, maximisons les rendements et minimisons les risques. C&#39;est ainsi que nous construisons une santé financière robuste pour nos partenaires. </p>
+        </div>
+    </div>
+</div>
+
+
+    <a href="/killbeokingston/contact"><button type="button" class="btn btn-light">Contact</button></a>     
 </div>
 
 
 
+
 <div class="container">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-        <div class="col mb-3">
-        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-        </a>
-        <p class="text-muted">&copy; 2024</p>
+    <footer class="row row-cols-1 row-cols-md-4 py-5 my-5 border-top center-text">
+        <div class="col mb-3 center-text">
+            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <p class="text-white">&copy; Killbeo Kingston 2024</p>
         </div>
     
-        <div class="col mb-3">
-    
+        <div class="col mb-3 center-text ">
+            <h5><a href="/killbeokingston/index.html" class="nav-link p-0 text-white">Nos différents services</a></h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="/killbeokingston/services/travaux" class="nav-link p-0 text-white">Travaux / Rénovation</a></li>
+                <li class="nav-item mb-2"><a href="/killbeokingston/services/conciergerie" class="nav-link p-0 text-white">Conciergerie / Prestations de services</a></li>
+                <li class="nav-item mb-2"><a href="/killbeokingston/services/conseil" class="nav-link p-0 text-white">Conseil et Gestion</a></li>
+            </ul>
         </div>
     
-        <div class="col mb-3">
-        <h5><a href="#" class="nav-link p-0 text-muted">Nos différents services</a></h5>
-        <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Travaux / Rénovation</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Conciergerie / Prestations de services</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Conseil et Gestion</a></li>
-        </ul>
+        <div class="col mb-3 center-text">
+            <h5><a href="/killbeokingston/contact" class="nav-link p-0 text-white">Contactez-nous</a></h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="https://www.google.com/maps/search/?api=1&query=66+Avenue+des+Champs-Élysées,+75008+Paris" class="nav-link p-0 text-white">66 Avenue des Champs-Élysées, 75008 Paris</a></li>
+                <li class="nav-item mb-2"><a href="tel:+33651375974" class="nav-link p-0 text-white">+33 6 51 37 59 74</a></li>
+                <li class="nav-item mb-2"><a href="mailto:contact@killbeokingston.com" class="nav-link p-0 text-white">contact@killbeokingston.com</a></li>
+            </ul>
         </div>
-    
-        <div class="col mb-3">
-        <h5><a href="#" class="nav-link p-0 text-muted">Contactez-nous</a></h5>
-        <ul class="nav flex-column">
-            <li class="nav-item mb-2">11, Avenue de la Baltique, Villebon-sur-Yvette</li>
-            <li class="nav-item mb-2">+33 6 51 37 59 74</li>
-            <li class="nav-item mb-2">contact@killbeokingston.fr</li>
-        </ul>
-        </div>
-        
     </footer>
-    </div>
-
-
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
  
  
