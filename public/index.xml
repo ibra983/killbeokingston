@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Killbeo Kingston Holding Company on Killbeo Kingston</title>
-    <link>https://ibra983.github.io/killbeokingston/</link>
+    <link>https://killbeo-kingston.com/</link>
     <description>Recent content in Killbeo Kingston Holding Company on Killbeo Kingston</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 08 Dec 2020 00:13:21 +0100</lastBuildDate>
-    <atom:link href="https://ibra983.github.io/killbeokingston/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://killbeo-kingston.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Travaux / Rénovation</title>
-      <link>https://ibra983.github.io/killbeokingston/services/travaux/</link>
+      <title>Travaux / Rénovation / Dépannage</title>
+      <link>https://killbeo-kingston.com/services/travaux/</link>
       <pubDate>Tue, 08 Dec 2020 00:13:21 +0100</pubDate>
-      <guid>https://ibra983.github.io/killbeokingston/services/travaux/</guid>
+      <guid>https://killbeo-kingston.com/services/travaux/</guid>
       <description>Contenu des travaux</description>
     </item>
     <item>
       <title>Conciergerie / Prestations de services</title>
-      <link>https://ibra983.github.io/killbeokingston/services/conciergerie/</link>
+      <link>https://killbeo-kingston.com/services/conciergerie/</link>
       <pubDate>Tue, 08 Dec 2020 00:13:21 +0100</pubDate>
-      <guid>https://ibra983.github.io/killbeokingston/services/conciergerie/</guid>
+      <guid>https://killbeo-kingston.com/services/conciergerie/</guid>
       <description>Contenu des conciergerie</description>
     </item>
     <item>
       <title>Conseil / Gestion</title>
-      <link>https://ibra983.github.io/killbeokingston/services/conseil/</link>
+      <link>https://killbeo-kingston.com/services/conseil/</link>
       <pubDate>Tue, 08 Dec 2020 00:13:21 +0100</pubDate>
-      <guid>https://ibra983.github.io/killbeokingston/services/conseil/</guid>
+      <guid>https://killbeo-kingston.com/services/conseil/</guid>
       <description>Contenu des conseil</description>
     </item>
   </channel>

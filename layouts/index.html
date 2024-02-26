@@ -79,31 +79,18 @@
       <div class="px-4 py-5 text-center">
           <h1 class="display-5 fw-bold">{{ .Title }}</h1>
           <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">{{ .Params.accroche }}</p>
+            <p class="lead mb-5">{{ .Params.accroche }} <br><br> {{ .Params.phraserouge }}</p>
           </div>
       </div>
   </div>
 
-  <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <img src="{{ ( resources.GetMatch "img/logokk.png").Permalink }}" class="d-block mx-lg-auto img-fluid" alt="LogoKillbeoKingston" width="700" height="500" loading="lazy" style="border-radius: 20px;">
-      </div>
-      <div class="col-lg-6">
-        <h1 class="display-55 fw-bold lh-1 mb-3">{{ .Params.phraserouge }}</h1>
-        <p class="lead">{{ .Params.phrasegauche }}</p>
-      </div>
-    </div>
-  </div>
-
-
-  <h1 class="px-4 py-5 my-5 text-center">{{ .Params.txtdiffservices }}</h1>
+  <h1 class="px-4 py-5 text-center"><strong>{{ .Params.txtdiffservices }}</strong></h1>
 
 
   <div class="servicesAccueil">  
     <div class="card" id="card1">
       <div class="overlay">
-        <h5>Travaux / Rénovation</h5>
+        <h5>Travaux / Rénovation / Dépannage</h5>
         <a href="{{ "services/travaux" | relURL }}" class="btn btn-dark">Découvrir</a>
       </div>
     </div>
@@ -122,6 +109,4 @@
       </div>
     </div>  
   </div>
-
-
   {{end}}

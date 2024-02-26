@@ -1,7 +1,7 @@
-baseURL = 'https://ibra983.github.io/killbeokingston'
+baseURL = 'https://killbeo-kingston.com'
 title = 'Killbeo Kingston'
 [params]
-    description = "Site web de Killbeo Kingston, offrant des services de travaux et rénovation, conciergerie, et conseil en gestion d'entreprise."
+    description = "Site web de Killbeo Kingston. Une holding offrant des services de travaux et rénovation, de conciergerie, ainsi que de conseil et gestion d'entreprise."
     favicon = "/img/logo1.png"
     logo = "/img/logo1.png"
     

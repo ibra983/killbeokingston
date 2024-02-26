@@ -1,5 +1,5 @@
 ---
-title: "Travaux / Rénovation"
+title: "Travaux / Rénovation / Dépannage"
 date: 2020-12-08T00:13:21+01:00
 draft: false
 weight: 1
@@ -16,6 +16,7 @@ categories:
   - nom: "Démolition"
   - nom: "Aménagement exterieur"
   - nom: "Revêtement sol/mur"
+  - nom: "Ménage"
 ---
 
 Contenu des travaux

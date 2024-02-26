@@ -15,6 +15,8 @@ body {
   color: white;
 }
 
+
+
 {{ end }}
 
 {{ define "main" }}
@@ -33,20 +35,52 @@ body {
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="{{ ( resources.GetMatch "img/RenovSDB1.jpg").Permalink }}" class="d-block w-100" alt="RenovSDB1">
+        <img src="{{ ( resources.GetMatch "img/RenovSDB1.jpg").Permalink }}" class="d-block w-100 img-fluid" alt="RenovSDB1">
       </div>
       <div class="carousel-item">
-        <img src="{{ ( resources.GetMatch "img/RenovSDB2.jpg").Permalink }}" class="d-block w-100" alt="RenovSDB2">
+        <img src="{{ ( resources.GetMatch "img/RenovSDB2.jpg").Permalink }}" class="d-block w-100 img-fluid" alt="RenovSDB2">
       </div>
       <div class="carousel-item">
-        <img src="{{ ( resources.GetMatch "img/RenovSejour1A.jpg").Permalink }}" class="d-block w-100" alt="RenovSejour1Av">
+        <img src="{{ ( resources.GetMatch "img/RenovSejour1A.jpg").Permalink }}" class="d-block w-100 img-fluid" alt="RenovSejour1Av">
       </div>
       <div class="carousel-item">
-        <img src="{{ ( resources.GetMatch "img/RenovSejour1AP.jpg").Permalink }}" class="d-block w-100" alt="RenovSejour1AP">
+        <img src="{{ ( resources.GetMatch "img/RenovSejour1AP.jpg").Permalink }}" class="d-block w-100 img-fluid" alt="RenovSejour1AP">
       </div>
+
+      <div class="carousel-item">
+        <img src="{{ ( resources.GetMatch "img/4.png").Permalink }}" class="d-block w-100 img-fluid" alt="SalonMassy">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{{ ( resources.GetMatch "img/SalonMassy3.png").Permalink }}" class="d-block w-100 img-fluid" alt="SalonMassy3">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{{ ( resources.GetMatch "img/SalonMassy1.png").Permalink }}" class="d-block w-100 img-fluid" alt="SalonMassy1">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{{ ( resources.GetMatch "img/PlanTravailMassy.png").Permalink }}" class="d-block w-100 img-fluid" alt="PlanTravailMassy">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{{ ( resources.GetMatch "img/6.png").Permalink }}" class="d-block w-100 img-fluid" alt="RobinetMassy">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{{ ( resources.GetMatch "img/5.png").Permalink }}" class="d-block w-100 img-fluid" alt="ToiletteMassy">
+      </div>
+
+
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -78,7 +112,7 @@ body {
       <h1 class="display-5 fw-bold lh-1 mb-3" id="txt2">{{ .Params.txt2 }}</h1>
     </div>
     <div class="col-md-12 mx-auto col-lg-10">
-      <form action="https://formspree.io/f/mzbnzyyy" method="POST" class="p-4 p-md-5 border rounded-3 bg-light">
+      <form action="https://formspree.io/f/xpzvwggr" method="POST" class="p-4 p-md-5 border rounded-3 bg-light">
         <div class="row">
           <div class="col-md-6 mb-3">
             <div class="form-floating">
@@ -115,6 +149,7 @@ body {
             <option value="Démolition">Démolition</option>
             <option value="Aménagement exterieur">Aménagement exterieur</option>
             <option value="Revêtement sol/mur">Revêtement sol/mur</option>
+            <option value="Revêtement sol/mur">Ménage</option>
           </select>
           <label for="typeDeTravaux">Type de Travaux</label>
         </div>
